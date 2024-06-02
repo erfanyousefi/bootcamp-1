@@ -68,7 +68,7 @@ console.log(originalObject.isEatable); // true
 function deepClone(obj) {
     return JSON.parse(JSON.stringify(obj))
 }
-// copyObject = cloneObject(originalObject);
+// copyObject = deepClone(originalObject);
 copyObject = {...originalObject}
 originalObject.isEatable = false;
 copyObject.isEatable = true;
